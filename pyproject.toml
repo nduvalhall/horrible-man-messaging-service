@@ -4,8 +4,12 @@ version = "0.1.0"
 description = ""
 authors = [{ name = "nduvalhall", email = "nduvalhall@gmail.com" }]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = ["fastapi (>=0.115.11,<0.116.0)", "python-socketio (>=5.12.1,<6.0.0)"]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi (>=0.115.11,<0.116.0)",
+    "python-socketio (>=5.12.1,<6.0.0)",
+    "uvicorn (>=0.34.0,<0.35.0)",
+]
 
 [tool.poetry]
 packages = [{ include = "msg_app", from = "src" }]
