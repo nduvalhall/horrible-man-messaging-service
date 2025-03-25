@@ -1,3 +1,3 @@
 #/bin/bash
 
-docker run -it -d horrible-man-messaging-service-api:latest --name api
+docker run -it -d --name api --network host horrible-man-messaging-service-api:latest
